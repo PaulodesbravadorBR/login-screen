@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: url("https://picsum.photos/1600/900") no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+  color: #fff;
+}
+
+.login-container {
+  width: min(420px, calc(100% - 32px));
+  background-color: transparent;
+  border: 2px solid #515151;
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+
+.input-group {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 24px 0;
+}
+
+/* Espaçamento no input para o texto não sobrepor o ícone */
+.input-group input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 44px 20px 20px;
+}
+
+.input-group input::placeholder {
+  color: #fff;
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+/* Posição do ícone dentro do input*/
+.input-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  filter: brightness(0) invert(1);
+}
+
+.form-options {
+  margin-top: -12px;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+form a {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+form a:hover {
+  text-decoration: underline;
+}
+
+.submit {
+  width: 100%;
+  height: 50px;
+  background-color: #5100b5;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.signup-text {
+  margin-top: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.signup-text span {
+  color: #5100b5;
+  text-decoration: underline;
+}
+
+.signup-text span:hover {
+  color: #893ee4;
+  text-decoration: underline;
+}
+
+.submit:hover {
+  background-color: #893ee4;
+}
+
+
+/* Responsividade para telas menores  */
+
+@media (max-width: 480px) {
+  body {
+    padding: 16px;
+  }
+
+  .login-container {
+    border-radius: 8px;
+    border-width: 1px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 24px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .input-group {
+    height: 45px;
+    margin: 18px 0;
+  }
+
+  .input-group input {
+    font-size: 14px;
+    padding: 15px 40px 15px 15px;
+  }
+
+  .input-group input::placeholder {
+    font-size: 13px;
+  }
+
+  .submit {
+    height: 45px;
+    font-size: 15px;
+  }
+}
+
+.copyright {
+  margin-top: 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+}
